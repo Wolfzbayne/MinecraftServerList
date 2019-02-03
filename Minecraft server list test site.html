@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Minecraft Servers</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="custom.css" rel="stylesheet">
   <!--I need to make the buttons at the top able to
   open up their server list one by one and then hide
 the other servers-->
@@ -35,68 +44,125 @@ the other servers-->
       });
     });
   </script>
-  <!-- This is the bootstrap code -->
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 <body>
-  <div class="container">
 
-    <h3><a href="./Minecraft server list test site.html">Minecraft Servers</a>
-      <h3><a href="./aboutme.html">About me</a></h3>
-      <h1>Minecraft Server List</h1>
-      <ul>
-        <li><a id="pvpservers" href="#pvp">PvP</a></li>
-        <li><a id="skyblockservers" href="#skyblock">Skyblock</a></li>
-        <li><a id="factionsservers" href="#factions">Factions</a></li>
-        <li><a id="survivalservers" href="#survival">Survival</a></li>
-        <li><a id="creativeservers" href="#creative">Creative</a></li>
-      </ul>
+  <div class="d-flex" id="wrapper">
 
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h4><button id="page1">1</button><button id="page2">2</button></h4>
-          <div id="pvp1">
-            <h2>PvP Servers</h2>
-            <img src="C:\Users\Gabe\Downloads\Rexcraftia.jpg" alt="Rexcraftia's logo">
-            <h3><span style="color:blue;">Rexcraftia</span> | ip:rexcraftia.com | <a href="https://minecraft-server-list.com/server/136443/vote/" target=_blank>Vote Here</a> </h3>
-            <img src="C:\Users\Gabe\Downloads\aspiria.jpg" alt="Aspiria's logo">
-            <h3><span style="color:blue;">Aspiria MC</span> | ip mcsl.AspiriaMc.com | <a href="https://minecraft-server-list.com/server/289594/vote/" target=_blank>Vote Here</a></h3>
-            <img src="C:\Users\Gabe\Downloads\EcoCity.jpg" alt="EcoCityCraft Econemy's logo">
-            <h3><span style="color:blue;">EcoCityCraft Economy</span> | ip:mc.ecocitycraft.com | <a href="https://minecraft-server-list.com/server/7038/vote/" target=_blank>Vote here </a></h3>
-            <img src="C:\Users\Gabe\Downloads\gaminglight.jpg" alt="Gaminglight's logo">
-            <h3><span style="color:blue;">GamingLight</span> | ip:mc.gaminglight.com | <a href="https://minecraft-server-list.com/server/435238/vote/" target=_blank>Vote Here </a> </h3>
-            <img src="C:\Users\Gabe\Downloads\McAim.jpg" alt="">
-            <h3><span style="color:blue" ;>MCAIM</span> | ip:mcaim.com | <a href="https://minecraft-server-list.com/server/431118/vote/" target=_blank>Vote Here</a></h3>
-            <img src="C:\Users\Gabe\Downloads\Minespire.jpg" alt="minespire's logo">
-            <h3><span style="color:blue;">MineSpire</span> | ip:mc.minespre.net | <a href="https://minecraft-server-list.com/server/280197/vote/" target=_blank>Vote Here</a></h3>
-          </div>
-          <div id="pvp2">
-            <img src="C:\Users\Gabe\Downloads\Blaze MC.jpg" alt="BlazeMC's logo">
-            <h3><span style="color:blue;">BlazeMC</span> | ip:BlazeMC.co | <a href="https://minecraft-server-list.com/server/424382/vote/" target=_blank>Vote Here</a></h3>
-            <img src="C:\Users\Gabe\Downloads\Hypixel.jpg" alt="">
-            <h3><span style="color:blue;">Hypixel</span> | ip:mc.hypixel.net | <a href="https://minecraft-server-list.com/server/292028/vote/" target=_blank>Vote Here</a></h3>
-            <img src="C:\Users\Gabe\Downloads\mccentral.jpg" alt="">
-            <h3><span stlye="color:blue;">Minecraft Central | ip:mc-central.net | <a href="https://minecraft-server-list.com/server/322140/vote/" target=_blank>Vote Here</a></h3>
-          </div>
-          <div id="skyblock">
-            <h1>Skyblock Servers</h1>
-          </div>
-          <div id="factions">
-            <h1>Factions Servers</h1>
-          </div>
-          <div id="survival">
-            <h1>Survival Servers</h1>
-          </div>
-          <div id="creative">
-            <h1>Creative Servers</h1>
-          </div>
-        </div>
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="list-group list-group-flush">
+        <a id="pvpservers" class="list-group-item list-group-item-action bg-light" href="#pvp">PvP</a>
+        <a id="skyblockservers" class="list-group-item list-group-item-action bg-light" href="#skyblock">Skyblock</a>
+        <a id="factionsservers" class="list-group-item list-group-item-action bg-light" href="#factions">Factions</a>
+        <a id="survivalservers" class="list-group-item list-group-item-action bg-light" href="#survival">Survival</a>
+        <a id="creativeservers" class="list-group-item list-group-item-action bg-light" href="#creative">Creative</a>
       </div>
-  </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
 
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Minecraft Server List</h1>
+        <p>Welcome, I hope you enjoy your stay</p>
+        <h3><a href="./Minecraft server list test site.html">Minecraft Servers</a>
+
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h4><button id="page1">1</button><button id="page2">2</button></h4>
+              <div id="pvp1">
+                <h2>PvP Servers</h2>
+                <img src="C:\Users\Gabe\Downloads\Rexcraftia.jpg" alt="Rexcraftia's logo">
+                <h3><span style="color:blue;">Rexcraftia</span> | ip:rexcraftia.com | <a href="https://minecraft-server-list.com/server/136443/vote/" target=_blank>Vote Here</a> </h3>
+                <img src="C:\Users\Gabe\Downloads\aspiria.jpg" alt="Aspiria's logo">
+                <h3><span style="color:blue;">Aspiria MC</span> | ip mcsl.AspiriaMc.com | <a href="https://minecraft-server-list.com/server/289594/vote/" target=_blank>Vote Here</a></h3>
+                <img src="C:\Users\Gabe\Downloads\EcoCity.jpg" alt="EcoCityCraft Econemy's logo">
+                <h3><span style="color:blue;">EcoCityCraft Economy</span> | ip:mc.ecocitycraft.com | <a href="https://minecraft-server-list.com/server/7038/vote/" target=_blank>Vote here </a></h3>
+                <img src="C:\Users\Gabe\Downloads\gaminglight.jpg" alt="Gaminglight's logo">
+                <h3><span style="color:blue;">GamingLight</span> | ip:mc.gaminglight.com | <a href="https://minecraft-server-list.com/server/435238/vote/" target=_blank>Vote Here </a> </h3>
+                <img src="C:\Users\Gabe\Downloads\McAim.jpg" alt="">
+                <h3><span style="color:blue" ;>MCAIM</span> | ip:mcaim.com | <a href="https://minecraft-server-list.com/server/431118/vote/" target=_blank>Vote Here</a></h3>
+                <img src="C:\Users\Gabe\Downloads\Minespire.jpg" alt="minespire's logo">
+                <h3><span style="color:blue;">MineSpire</span> | ip:mc.minespre.net | <a href="https://minecraft-server-list.com/server/280197/vote/" target=_blank>Vote Here</a></h3>
+              </div>
+              <div id="pvp2">
+                <img src="C:\Users\Gabe\Downloads\Blaze MC.jpg" alt="BlazeMC's logo">
+                <h3><span style="color:blue;">BlazeMC</span> | ip:BlazeMC.co | <a href="https://minecraft-server-list.com/server/424382/vote/" target=_blank>Vote Here</a></h3>
+                <img src="C:\Users\Gabe\Downloads\Hypixel.jpg" alt="">
+                <h3><span style="color:blue;">Hypixel</span> | ip:mc.hypixel.net | <a href="https://minecraft-server-list.com/server/292028/vote/" target=_blank>Vote Here</a></h3>
+                <img src="C:\Users\Gabe\Downloads\mccentral.jpg" alt="">
+                <h3><span stlye="color:blue;">Minecraft Central | ip:mc-central.net | <a href="https://minecraft-server-list.com/server/322140/vote/" target=_blank>Vote Here</a></h3>
+              </div>
+              <div id="skyblock">
+                <h1>Skyblock Servers</h1>
+              </div>
+              <div id="factions">
+                <h1>Factions Servers</h1>
+              </div>
+              <div id="survival">
+                <h1>Survival Servers</h1>
+              </div>
+              <div id="creative">
+                <h1>Creative Servers</h1>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
 </body>
+
+</html>
