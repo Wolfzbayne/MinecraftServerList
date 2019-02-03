@@ -4,11 +4,12 @@
 <head>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Minecraft Servers</title>
     <!--I need to make the buttons at the top able to
   open up their server list one by one and then hide
 the other servers-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
     $(document).ready(function(){
         $("#skyblockservers").click(function(){
@@ -35,11 +36,13 @@ the other servers-->
       });
     </script>
     <!-- This is the bootstrap code -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
 
 <body>
+
+
     <h3><a href="./Minecraft server list test site.html">Minecraft Servers</a><h3><a href="./aboutme.html">About me</a></h3>
     <h1>Minecraft Server List</h1>
     <ul>
@@ -49,8 +52,11 @@ the other servers-->
       <li><a id="survivalservers"href="#survival">Survival</a></li>
       <li><a id="creativeservers"href="#creative">Creative</a></li>
     </ul>
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-12 text-center">
       <h4><button id="page1">1</button><button id="page2">2</button></h4>
-    <div id="pvp1">
+    <div id="pvp1" >
         <h2>PvP Servers</h2>
         <img src="C:\Users\Gabe\Downloads\Rexcraftia.jpg" alt="Rexcraftia's logo">
         <h3><span style="color:blue;">Rexcraftia</span> | ip:rexcraftia.com | <a href="https://minecraft-server-list.com/server/136443/vote/" target= _blank>Vote Here</a> </h3>
@@ -70,6 +76,8 @@ the other servers-->
           <h3><span style="color:blue;">BlazeMC</span> | ip:BlazeMC.co | <a href="https://minecraft-server-list.com/server/424382/vote/" target=_blank>Vote Here</a></h3>
         <img src="C:\Users\Gabe\Downloads\Hypixel.jpg" alt="">
           <h3><span style="color:blue;">Hypixel</span> | ip:mc.hypixel.net | <a href="https://minecraft-server-list.com/server/292028/vote/" target=_blank>Vote Here</a></h3>
+        <img src="C:\Users\Gabe\Downloads\mccentral.jpg" alt="">
+          <h3><span stlye="color:blue;">Minecraft Central | ip:mc-central.net | <a href="https://minecraft-server-list.com/server/322140/vote/" target=_blank>Vote Here</a></h3>
       </div>
       <div id="skyblock">
       <h1>Skyblock Servers</h1>
@@ -83,13 +91,11 @@ the other servers-->
     <div id="creative">
       <h1>Creative Servers</h1>
     </div>
+  </div>
+</div>
+</div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
-
-</html>
-
-
-
-<!--<img src="" alt="">
-  <h3> |  | <a href="" target=_blank>Vote Here</a></h3>-->
